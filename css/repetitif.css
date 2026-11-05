@@ -15,3 +15,49 @@
     --text-color: #FFF9EC;
     --title-color: #0075F2;
 }
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    width: 50%;
+    justify-content: space-between;
+    height: 8vh;
+
+    >a{
+        font-size: 3rem;
+        color: var(--title-color);
+        font-family: "Zen Dots";
+        letter-spacing: -5px;
+    }
+    .nav-menu{
+        display: inherit;
+        width: 400px;
+        padding: 0 30px;
+        justify-content: space-around;
+        a{
+            color: var(--text-color);
+            font-family: "base";
+            font-size: 1.2rem;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    p{
+        color: var(--text-color);
+        font-size: 0.8rem;
+    }
+}
