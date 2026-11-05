@@ -1,6 +1,9 @@
-@font-face {
-    font-family: "base";
-    src: url();
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .zen-dots-regular {
@@ -45,7 +48,7 @@ nav{
         justify-content: space-around;
         a{
             color: var(--text-color);
-            font-family: "base";
+            font-family: "Inter";
             font-size: 1.2rem;
         }
     }
