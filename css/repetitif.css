@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "base";
+    src: url();
+}
+
+.zen-dots-regular {
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+:root{
+    --background-color: #051014;
+    --text-color: #FFF9EC;
+    --title-color: #0075F2;
+}
