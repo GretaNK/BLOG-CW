@@ -72,10 +72,10 @@ footer{
 
 .bouton{
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 15px;
     background-color: var(--title-color);
     border: none;
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 20px;
 }
