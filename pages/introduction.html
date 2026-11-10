@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article</title>
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/repetitif.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <a href="../index.html">
+            CB
+        </a>
+        <div class="nav-menu">
+            <a href="pages/aPropos.html">À propos</a>
+            <a href="#">Articles</a>
+        </div>
+    </nav>
+
+    <div class="container-article">
+                <article class="container-gauche">
+                    <header class="hero-article">
+
+                        <h1>
+                            Introduction au CSS
+                        </h1>
+
+                        <p class="intro">
+                            Les quelques principes essentiels pour donner du rythme, de la
+                            personnalité et une vraie cohérence visuelle à tes pages web.
+                        </p>
+
+                        <div class="sous-titre">
+                            <div class="auteur">
+                                <span class="avatar" aria-hidden="true">L</span>
+                                <span>Écrit par <strong>Lorem Ipsum</strong></span>
+                            </div>
+
+                            <span>5 novembre 2026</span>
+                            <span>·</span>
+                            <span>6 min de lecture</span>
+                        </div>
+                    </header>
+
+                    <figure class="img-article">
+                        <img src="https://picsum.photos/seed/codebloom-css/1400/720" alt="Paysage">
+                        <figcaption>
+                            Le CSS transforme une structure HTML en une expérience visuelle.
+                        </figcaption>
+                    </figure>
+
+                    <div class="container-text">
+                        <p>
+                            Lorsqu'on souhaite créer une page web, on commence généralement par utiliser le HTML, qui permet de structurer le contenu d'un site : titres, paragraphes, images, liens, etc. 
+
+                            Cependant, pour rendre cette page plus attractive et lui apporter une véritable identité visuelle, nous utilisons le CSS. 
+                        </p>
+
+                        <h2>Qu'est le CSS</h2>
+
+                        <p>
+                            Le CSS (Cascading Style Sheets), ou « feuilles de style en cascade » en français, est un langage qui permet de définir l'apparence et la mise en forme des éléments d'une page web. 
+
+                            Grâce au CSS, il est possible de personnaliser de nombreux aspects d'un site, notamment les couleurs, les polices de caractères, les tailles, les espacements ou encore le positionnement des éléments. 
+                        </p>
+
+                        <p>
+                            Il existe plusieurs façons d'intégrer du CSS dans une page web. Les règles de style peuvent être directement écrites dans le fichier HTML ou placées dans un fichier CSS externe. 
+                        </p>
+
+                        <div class="conseil">
+                            <span aria-hidden="true">✦</span>
+                            <p>
+                                <strong>Conseil :</strong> la méthode la plus recommandée consiste à utiliser un fichier CSS séparé. Cette approche permet de mieux organiser son code, de séparer la structure HTML de la présentation visuelle et de faciliter la maintenance du site. 
+                            </p>
+                        </div>
+
+                        <section class="exemple-code" aria-label="Exemple de code CSS">
+                            <div class="titre-code">
+                                <div>
+                                    <p class="categorie">Exemple à retenir</p>
+                                    <h3>Une carte simple avec CSS</h3>
+                                </div>
+                                <span class="langage-code">CSS</span>
+                            </div>
+
+                            <pre><code>&lt;head&gt; 
+&lt;link rel="stylesheet" href="style.css"&gt; 
+&lt;/head&gt;
+                            </code></pre>
+
+                            <p class="note-code">
+                                <strong>À retenir :</strong> <code>&lt;link&gt;</code> permet de lier une ressource externe à notre document HTML. 
+                            </p>
+                        </section>
+
+                        <p>
+                            rel="stylesheet" indique que le fichier lié est une feuille de style CSS. 
+
+                            href="style.css" précise le chemin vers notre fichier CSS. 
+                        </p>
+
+                        <p>
+                            Il est important de vérifier que le chemin indiqué dans href correspond bien à l'emplacement de notre fichier CSS. 
+
+                            Une fois cette connexion établie, notre page HTML est prête à recevoir ses premiers styles !
+                        </p>
+
+                        
+                    </div>
+
+                    <footer class="partage" id="partage">
+                        <div>
+                            <p class="categorie">Tu as aimé cet article ?</p>
+                            <h2>Partage-le autour de toi.</h2>
+                        </div>
+
+                        <div class="liens-partage" aria-label="Partager cet article">
+                            <a href="#" aria-label="Partager sur LinkedIn">in</a>
+                            <a href="#" aria-label="Partager sur X">𝕏</a>
+                            <a href="#" aria-label="Partager par e-mail">
+                                ✉
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+
+                <aside>
+
+                    <div class="card-aside" id="articles" aria-label="Liste des articles">
+                        <p class="categorie">Le blog CodeBloom</p>
+                        <h2>Autres articles</h2>
+
+                        <a class="article-aside" href="introduction.html">
+                            <span>
+                                <strong>Introduction au CSS</strong>
+                                <small>Développement · 4 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Les sélécteurs CSS</strong>
+                                <small>Design · 5 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Styles de texte et bordures</strong>
+                                <small>Développement · 7 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Le modèle de boîte</strong>
+                                <small>Design · 5 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Les unités de mesure</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Flexbox</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Le positionnement</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>CSS Grid</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Responsive design</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Les polices personalisées</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="tous-articles" href="#">Voir la liste complète <span>→</span></a
+                        >
+                    </div>
+                </aside>
+            </div>
+
+            <a href="#top" class="retour-haut">Retour en haut ↑</a>
+        </main>
+
+    <footer>
+        <img src="https://digitalcity.brussels/sites/default/files/styles/large/public/2021-07/CfiTech.jpg?itok=ONsoVdqt" alt="">
+        <p>All rights reserved Ⓒ 2026 - CodeBloom</p>
+    </footer>
+
+</body>
+</html>

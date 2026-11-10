@@ -9,6 +9,7 @@ body {
     color: var(--text-color);
     font-family: "DM Sans", Arial, sans-serif;
     line-height: 1.65;
+    margin-top: 5vh;
 }
 
 /* article */
@@ -40,7 +41,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 60px;
+    gap: 200px;
+    padding: 100px 100px 100px 200px;
 }
 
 .container-gauche {

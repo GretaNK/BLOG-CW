@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article</title>
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/repetitif.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <a href="../index.html">
+            CB
+        </a>
+        <div class="nav-menu">
+            <a href="pages/aPropos.html">À propos</a>
+            <a href="#">Articles</a>
+        </div>
+    </nav>
+
+    <div class="container-article">
+                <article class="container-gauche">
+                    <header class="hero-article">
+
+                        <h1>
+                            Les bases du CSS moderne pour créer des interfaces élégantes
+                        </h1>
+
+                        <p class="intro">
+                            Les quelques principes essentiels pour donner du rythme, de la
+                            personnalité et une vraie cohérence visuelle à tes pages web.
+                        </p>
+
+                        <div class="sous-titre">
+                            <div class="auteur">
+                                <span class="avatar" aria-hidden="true">L</span>
+                                <span>Écrit par <strong>Lorem Ipsum</strong></span>
+                            </div>
+
+                            <span>5 novembre 2026</span>
+                            <span>·</span>
+                            <span>6 min de lecture</span>
+                        </div>
+                    </header>
+
+                    <figure class="img-article">
+                        <img src="https://picsum.photos/seed/codebloom-css/1400/720" alt="Paysage">
+                        <figcaption>
+                            Le CSS transforme une structure HTML en une expérience visuelle.
+                        </figcaption>
+                    </figure>
+
+                    <div class="container-text">
+                        <p>
+                            Quand on débute dans le web, le CSS peut sembler n’être qu’une
+                            longue liste de propriétés à mémoriser. En réalité, c’est surtout
+                            un outil de composition : il permet de guider le regard, de créer
+                            une ambiance et de rendre une interface agréable à utiliser.
+                        </p>
+
+                        <h2>Commencer par une base claire</h2>
+
+                        <p>
+                            Avant d’ajouter des effets, pose les fondations. Choisis une
+                            palette courte, une ou deux polices faciles à lire et des
+                            espacements réguliers. Cette cohérence rend la page immédiatement
+                            plus professionnelle.
+                        </p>
+
+                        <p>
+                            Les variables CSS sont parfaites pour conserver ces choix au même
+                            endroit. Elles évitent de répéter les couleurs et permettent de
+                            modifier rapidement l’identité visuelle d’un site.
+                        </p>
+
+                        <div class="conseil">
+                            <span aria-hidden="true">✦</span>
+                            <p>
+                                <strong>Conseil :</strong> limite-toi à une couleur principale
+                                et une couleur d’accent. Elles suffisent souvent à créer une
+                                interface forte.
+                            </p>
+                        </div>
+
+                        <section class="exemple-code" aria-label="Exemple de code CSS">
+                            <div class="titre-code">
+                                <div>
+                                    <p class="categorie">Exemple à retenir</p>
+                                    <h3>Une carte simple avec CSS</h3>
+                                </div>
+                                <span class="langage-code">CSS</span>
+                            </div>
+
+                            <pre><code>.card {
+    padding: 24px;
+    background-color: #051014;
+    border-radius: 16px;
+    }
+
+    .card:hover {
+    transform: translateY(-5px);
+}                           </code></pre>
+
+                            <p class="note-code">
+                                <strong>À retenir :</strong> <code>padding</code> crée de
+                                l'espace à l'intérieur, <code>border-radius</code> arrondit les
+                                coins et <code>:hover</code> change le style au passage de la
+                                souris.
+                            </p>
+                        </section>
+
+                        <h2>Jouer avec l’espace et la hiérarchie</h2>
+
+                        <p>
+                            Les marges et les espaces vides ne sont pas du vide perdu : ils
+                            donnent de l’air au contenu. Un titre généreux, des paragraphes
+                            assez courts et une largeur de lecture confortable aident le
+                            lecteur à rester concentré.
+                        </p>
+
+                        <p>
+                            La hiérarchie se construit aussi grâce au contraste. Les titres
+                            peuvent être plus grands et plus colorés, tandis que le texte
+                            courant reste discret et très lisible.
+                        </p>
+
+                        <h2>Penser aussi aux petits écrans</h2>
+
+                        <p>
+                            Une bonne page s’adapte à toutes les tailles d’écran. Sur mobile,
+                            une colonne unique, des boutons faciles à toucher et un texte
+                            légèrement plus compact font toute la différence.
+                        </p>
+                    </div>
+
+                    <footer class="partage" id="partage">
+                        <div>
+                            <p class="categorie">Tu as aimé cet article ?</p>
+                            <h2>Partage-le autour de toi.</h2>
+                        </div>
+
+                        <div class="liens-partage" aria-label="Partager cet article">
+                            <a href="#" aria-label="Partager sur LinkedIn">in</a>
+                            <a href="#" aria-label="Partager sur X">𝕏</a>
+                            <a href="#" aria-label="Partager par e-mail">
+                                ✉
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+
+                <aside>
+
+                    <div class="card-aside" id="articles" aria-label="Liste des articles">
+                        <p class="categorie">Le blog CodeBloom</p>
+                        <h2>Autres articles</h2>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Bien structurer sa page en HTML</strong>
+                                <small>Développement · 4 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Choisir les bonnes couleurs pour son site</strong>
+                                <small>Design · 5 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Un premier site vraiment responsive</strong>
+                                <small>Développement · 7 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Créer une palette de couleurs cohérente</strong>
+                                <small>Design · 5 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>10 composants pour enrichir tes articles</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="tous-articles" href="#">Voir la liste complète <span>→</span></a
+                        >
+                    </div>
+                </aside>
+            </div>
+
+            <a href="#top" class="retour-haut">Retour en haut ↑</a>
+        </main>
+
+    <footer>
+        <img src="https://digitalcity.brussels/sites/default/files/styles/large/public/2021-07/CfiTech.jpg?itok=ONsoVdqt" alt="">
+        <p>All rights reserved Ⓒ 2026 - CodeBloom</p>
+    </footer>
+
+</body>
+</html>

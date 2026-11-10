@@ -7,6 +7,7 @@
 body{
     background-color: var(--background-color);
     padding-top: 10vh;
+    font-family: "Inter";
 }
 
 main{
@@ -26,9 +27,33 @@ main{
             object-fit: cover;
         }
     }
+    h3{
+        color: var(--title-color);
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
     p{
         color: var(--text-color);
         line-height: 2rem;
         font-size: 1.2rem;
+        margin: 15px 0;
+    }
+    ul{
+        margin: 50px;
+        li{
+            margin-bottom: 15px;
+            span{
+                text-decoration: underline;
+                text-decoration-color: var(--title-color);
+                text-decoration-thickness: 3px;
+                font-weight: bold;
+            }
+            color: var(--text-color);
+        }
+    }
+    .fin{
+        font-style: italic;
+        font-size: 1rem;
+        text-align: center;
     }
 }
