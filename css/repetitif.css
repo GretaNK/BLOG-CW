@@ -31,14 +31,14 @@ nav{
     display: flex;
     align-items: center;
     z-index: 999;
-    width: 50%;
+    width: 52%;
     justify-content: space-between;
     height: 8vh;
 
     >a{
         font-size: 3rem;
         color: var(--title-color);
-        font-family: "Zen Dots";
+        font-family: "Zen Dots", sans-serif;
         letter-spacing: -5px;
     }
     .nav-menu{
@@ -56,9 +56,14 @@ nav{
 
 footer{
     display: flex;
-    height: 5vh;
+    width: 57%;
+    padding-left: 150px;
+    height: 10vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    img{
+        height: 50px;
+    }
     p{
         color: var(--text-color);
         font-size: 0.8rem;
