@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article</title>
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/repetitif.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <a href="../index.html">
+            CB
+        </a>
+        <div class="nav-menu">
+            <a href="pages/aPropos.html">À propos</a>
+            <a href="#">Articles</a>
+        </div>
+    </nav>
+
+    <div class="container-article">
+                <article class="container-gauche">
+                    <header class="hero-article">
+
+                        <h1>
+                            Les sélecteurs CSS
+                        </h1>
+
+                        <p class="intro">
+                            Maintenant que notre fichier CSS est correctement relié à notre page HTML, nous pouvons commencer à appliquer nos premiers styles. 
+                        </p>
+
+                        <div class="sous-titre">
+                            <div class="auteur">
+                                <span class="avatar" aria-hidden="true">L</span>
+                                <span>Écrit par <strong>Lorem Ipsum</strong></span>
+                            </div>
+
+                            <span>5 novembre 2026</span>
+                            <span>·</span>
+                            <span>6 min de lecture</span>
+                        </div>
+                    </header>
+
+                    <figure class="img-article">
+                        <img src="https://picsum.photos/seed/codebloom-css/1400/720" alt="Paysage">
+                        <figcaption>
+                            Le CSS transforme une structure HTML en une expérience visuelle.
+                        </figcaption>
+                    </figure>
+
+                    <div class="container-text">
+                        <p>
+                            Un sélecteur permet d'indiquer à quels éléments HTML nous souhaitons appliquer un style. Il est donc essentiel pour personnaliser l'apparence de notre page web. 
+
+                            Pour cela, nous allons utiliser les sélecteurs CSS. 
+                        </p>
+
+                        <h2>Comprendre la syntaxe CSS</h2>
+
+                        <p>
+                            Une règle CSS se compose de deux parties principales 
+
+                            Le sélecteur : il indique quel élément HTML nous souhaitons modifier. 
+
+                            Le bloc de déclarations : il contient les propriétés CSS et leurs valeurs, qui définissent l'apparence de l'élément. 
+                        </p>
+
+                        <p>
+                            Il existe plusieurs types de sélecteurs permettant de cibler les éléments HTML de différentes manières. <br>
+
+                            Le sélecteur par balise HTML <br>
+
+                            Ce sélecteur permet de sélectionner tous les éléments portant le même nom de balise. <br>
+                            Le sélecteur par identifiant (ID) <br>
+
+                            Le sélecteur ID permet de cibler un élément HTML possédant un identifiant spécifique. En CSS, il est précédé du symbole #. <br>
+                            Le sélecteur par classe (Class) <br>
+
+                            Le sélecteur de classe permet d'appliquer le même style à plusieurs éléments HTML. En CSS, il est précédé d'un point ..
+                        </p>
+
+                        <div class="conseil">
+                            <span aria-hidden="true">✦</span>
+                            <p>
+                                <strong>Conseil :</strong> contrairement à un ID, une classe peut être utilisée sur plusieurs éléments HTML. C'est particulièrement pratique lorsqu'on souhaite réutiliser les mêmes styles à différents endroits de notre site. 
+                            </p>
+                        </div>
+
+                        <section class="exemple-code" aria-label="Exemple de code CSS">
+                            <div class="titre-code">
+                                <div>
+                                    <p class="categorie">Exemple à retenir</p>
+                                    <h3>Selecteur html</h3>
+                                </div>
+                                <span class="langage-code">CSS</span>
+                            </div>
+
+                            <pre><code>p { 
+    color: #333; 
+    line-height: 1.3; 
+}                   </code></pre>
+
+                            <p class="note-code">
+                                <strong>À retenir :</strong> Dans cet exemple : 
+
+                                p est le sélecteur. Il cible tous les paragraphes de notre page HTML. <br>
+
+                                color: #333; définit la couleur du texte en gris foncé. 
+                                line-height: 1.3; définit l'espacement vertical entre les lignes du texte à 1,3 fois la hauteur de la police. <br>
+
+                                Les accolades { } permettent de regrouper les déclarations CSS. Chaque déclaration est composée d'une propriété et d'une valeur, séparées par deux-points : et terminées par un point-virgule ;.
+                            </p>
+                        </section>
+
+                        <h2>Pour résumer </h2>
+
+                        <p>
+                            p : sélectionne tous les paragraphes. <br>
+
+                            #identifiant : sélectionne un élément grâce à son ID. <br>
+
+                            .classe : sélectionne tous les éléments possédant cette classe. <br>
+
+                            * : sélectionne tous les éléments HTML. <br>
+
+                            En css le style de texte s’appliquent a l’azide de plusieurs propriété: <br>
+                        </p>
+
+                    </div>
+
+                    <footer class="partage" id="partage">
+                        <div>
+                            <p class="categorie">Tu as aimé cet article ?</p>
+                            <h2>Partage-le autour de toi.</h2>
+                        </div>
+
+                        <div class="liens-partage" aria-label="Partager cet article">
+                            <a href="#" aria-label="Partager sur LinkedIn">in</a>
+                            <a href="#" aria-label="Partager sur X">𝕏</a>
+                            <a href="#" aria-label="Partager par e-mail">
+                                ✉
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+
+                <aside>
+
+                    <div class="card-aside" id="articles" aria-label="Liste des articles">
+                        <p class="categorie">Le blog CodeBloom</p>
+                        <h2>Autres articles</h2>
+
+                        <a class="article-aside" href="introduction.html">
+                            <span>
+                                <strong>Introduction au CSS</strong>
+                                <small>Développement · 4 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="selecteurs.html">
+                            <span>
+                                <strong>Les sélécteurs CSS</strong>
+                                <small>Design · 5 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="textesetbordures.html">
+                            <span>
+                                <strong>Styles de texte et bordures</strong>
+                                <small>Développement · 7 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Le modèle de boîte</strong>
+                                <small>Design · 5 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Les unités de mesure</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="flexbox.html">
+                            <span>
+                                <strong>Flexbox</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Le positionnement</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>CSS Grid</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Responsive design</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Les polices personalisées</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="tous-articles" href="#">Voir la liste complète <span>→</span></a
+                        >
+                    </div>
+                </aside>
+            </div>
+
+            <a href="#top" class="retour-haut">Retour en haut ↑</a>
+        </main>
+
+    <footer>
+        <img src="https://digitalcity.brussels/sites/default/files/styles/large/public/2021-07/CfiTech.jpg?itok=ONsoVdqt" alt="">
+        <p>All rights reserved Ⓒ 2026 - CodeBloom</p>
+    </footer>
+
+</body>
+</html>

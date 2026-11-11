@@ -50,6 +50,14 @@ nav{
             color: var(--text-color);
             font-family: "Inter";
             font-size: 1rem;
+            transition-property: transform, text-decoration, color;
+            transition-duration: 0.3s;
+            transition-timing-function: linear;
+        }
+        a:hover{
+            color: var(--title-color);
+            text-decoration: underline;
+            transform: scale(1.1);
         }
     }
 }
@@ -79,4 +87,11 @@ footer{
     color: var(--text-color);
     font-size: 1rem;
     border-radius: 20px;
+    transition: transform 0.3s linear;
+}
+.bouton:hover{
+    transform: translateY(-3px) scale(1.05);
+}
+.bouton:active{
+    transform: translateY(0) scale(0.95);
 }

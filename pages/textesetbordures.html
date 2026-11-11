@@ -20,7 +20,7 @@
         </a>
         <div class="nav-menu">
             <a href="pages/aPropos.html">À propos</a>
-            <a href="#">Articles</a>
+            <a href="categories.html">Articles</a>
         </div>
     </nav>
 
@@ -29,12 +29,11 @@
                     <header class="hero-article">
 
                         <h1>
-                            Les bases du CSS moderne pour créer des interfaces élégantes
+                            Styles de texte et bordures
                         </h1>
 
                         <p class="intro">
-                            Les quelques principes essentiels pour donner du rythme, de la
-                            personnalité et une vraie cohérence visuelle à tes pages web.
+                            Maintenant que nous avons découvert les sélecteurs CSS, nous pouvons aller plus loin dans la personnalisation de notre page web. 
                         </p>
 
                         <div class="sous-titre">
@@ -58,33 +57,31 @@
 
                     <div class="container-text">
                         <p>
-                            Quand on débute dans le web, le CSS peut sembler n’être qu’une
-                            longue liste de propriétés à mémoriser. En réalité, c’est surtout
-                            un outil de composition : il permet de guider le regard, de créer
-                            une ambiance et de rendre une interface agréable à utiliser.
+                            Le CSS nous permet notamment de modifier l'apparence des textes et d'ajouter des bordures aux éléments HTML. Ces propriétés sont essentielles pour rendre un site plus esthétique, lisible et agréable à utiliser. 
                         </p>
 
-                        <h2>Commencer par une base claire</h2>
+                        <h2>Les polices de caractères (Fonts)</h2>
 
                         <p>
-                            Avant d’ajouter des effets, pose les fondations. Choisis une
-                            palette courte, une ou deux polices faciles à lire et des
-                            espacements réguliers. Cette cohérence rend la page immédiatement
-                            plus professionnelle.
+                            Une police de caractères, appelée font en anglais, représente l'apparence graphique d'un texte. <br>
+
+                            Grâce au CSS, nous pouvons modifier la police utilisée, sa taille, son épaisseur, son style ou encore sa couleur.       
                         </p>
 
                         <p>
-                            Les variables CSS sont parfaites pour conserver ces choix au même
-                            endroit. Elles évitent de répéter les couleurs et permettent de
-                            modifier rapidement l’identité visuelle d’un site.
+                            Voici les principales propriétés CSS permettant de personnaliser un texte. <br>
+
+                            font-family : choisir la police de caractères <br>
+
+                            La propriété font-family permet de définir la police utilisée pour afficher un texte. <br>
+
+                            Par exemple, nous pouvons utiliser Arial, Courier New ou Times New Roman. <br>
                         </p>
 
                         <div class="conseil">
                             <span aria-hidden="true">✦</span>
                             <p>
-                                <strong>Conseil :</strong> limite-toi à une couleur principale
-                                et une couleur d’accent. Elles suffisent souvent à créer une
-                                interface forte.
+                                <strong>Conseil :</strong> jouez avec les épaisseurs, les styles de bordures et les polices pour créer une identité visuelle cohérente, sans surcharger votre page.
                             </p>
                         </div>
 
@@ -92,52 +89,61 @@
                             <div class="titre-code">
                                 <div>
                                     <p class="categorie">Exemple à retenir</p>
-                                    <h3>Une carte simple avec CSS</h3>
+                                    <h3>Personnaliser le texte</h3>
                                 </div>
                                 <span class="langage-code">CSS</span>
                             </div>
 
-                            <pre><code>.card {
-    padding: 24px;
-    background-color: #051014;
-    border-radius: 16px;
-    }
-
-    .card:hover {
-    transform: translateY(-5px);
-}                           </code></pre>
+                            <pre><code>p { 
+    font-family: Arial, sans-serif; 
+    font-size: 32px;
+    font-weight: bold; 
+    font-style: italic; 
+} 
+                            </code></pre>
 
                             <p class="note-code">
-                                <strong>À retenir :</strong> <code>padding</code> crée de
-                                l'espace à l'intérieur, <code>border-radius</code> arrondit les
-                                coins et <code>:hover</code> change le style au passage de la
-                                souris.
+                                <strong>À retenir : </strong> dans cet exemple tout les paragraphes auront la police Arial, une taille de 32px, seront gras et italiques.
                             </p>
                         </section>
 
-                        <h2>Jouer avec l’espace et la hiérarchie</h2>
+                        <h2>Les bordures en CSS (Borders)</h2>
 
                         <p>
-                            Les marges et les espaces vides ne sont pas du vide perdu : ils
-                            donnent de l’air au contenu. Un titre généreux, des paragraphes
-                            assez courts et une largeur de lecture confortable aident le
-                            lecteur à rester concentré.
+                            En plus de personnaliser nos textes, le CSS nous permet d'ajouter des bordures autour des éléments HTML. <br>
+
+                            Les bordures sont particulièrement utiles pour délimiter des sections, encadrer des images, mettre en valeur des boutons ou créer des cartes contenant des articles de blog. <br>
+
+                            Pour cela, nous utilisons principalement les propriétés suivantes. <br>
+
+                            border : ajouter une bordure <br>
+
+                            La propriété border permet de définir l'épaisseur, le style et la couleur d'une bordure en une seule déclaration. 
                         </p>
+
+                        <h2>Il existe plusieurs styles de bordures </h2>
 
                         <p>
-                            La hiérarchie se construit aussi grâce au contraste. Les titres
-                            peuvent être plus grands et plus colorés, tandis que le texte
-                            courant reste discret et très lisible.
+                            solid : bordure continue. <br>
+
+                            dashed : bordure en tirets. <br>
+
+                            dotted : bordure en pointillés. <br>
+
+                            double : bordure composée de deux lignes. <br>
+
+                            none : aucune bordure. <br>
+
+                            border-radius : arrondir les coins <br>
+
+                            La propriété border-radius permet d'arrondir les coins d'un élément HTML. <br>
+
+                            Elle est souvent utilisée pour créer des boutons modernes, des cartes ou des encadrés. 
                         </p>
 
-                        <h2>Penser aussi aux petits écrans</h2>
-
-                        <p>
-                            Une bonne page s’adapte à toutes les tailles d’écran. Sur mobile,
-                            une colonne unique, des boutons faciles à toucher et un texte
-                            légèrement plus compact font toute la différence.
-                        </p>
+                        
                     </div>
+                    
 
                     <footer class="partage" id="partage">
                         <div>
@@ -161,37 +167,72 @@
                         <p class="categorie">Le blog CodeBloom</p>
                         <h2>Autres articles</h2>
 
-                        <a class="article-aside" href="#">
+                        <a class="article-aside" href="introduction.html">
                             <span>
-                                <strong>Bien structurer sa page en HTML</strong>
+                                <strong>Introduction au CSS</strong>
                                 <small>Développement · 4 min</small>
                             </span>
                         </a>
 
-                        <a class="article-aside" href="#">
+                        <a class="article-aside" href="selecteurs.html">
                             <span>
-                                <strong>Choisir les bonnes couleurs pour son site</strong>
+                                <strong>Les sélécteurs CSS</strong>
                                 <small>Design · 5 min</small>
                             </span>
                         </a>
 
-                        <a class="article-aside" href="#">
+                        <a class="article-aside" href="textesetbordures.html">
                             <span>
-                                <strong>Un premier site vraiment responsive</strong>
+                                <strong>Styles de texte et bordures</strong>
                                 <small>Développement · 7 min</small>
                             </span>
                         </a>
 
                         <a class="article-aside" href="#">
                             <span>
-                                <strong>Créer une palette de couleurs cohérente</strong>
+                                <strong>Le modèle de boîte</strong>
                                 <small>Design · 5 min</small>
                             </span>
                         </a>
 
                         <a class="article-aside" href="#">
                             <span>
-                                <strong>10 composants pour enrichir tes articles</strong>
+                                <strong>Les unités de mesure</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="flexbox.html">
+                            <span>
+                                <strong>Flexbox</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Le positionnement</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>CSS Grid</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Responsive design</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="#">
+                            <span>
+                                <strong>Les polices personalisées</strong>
                                 <small>Boîte à outils · 8 min</small>
                             </span>
                         </a>

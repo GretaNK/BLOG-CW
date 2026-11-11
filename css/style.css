@@ -48,7 +48,7 @@ header{
         }
         p{
             font-style: italic;
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: var(--text-color);
             margin: 1rem 0 5rem;
         }
@@ -90,10 +90,9 @@ main{
     padding-top: 100px ;
     >p{
         color: var(--text-color);
-        text-align: center;
         width: 80%;
         margin: auto;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         line-height: 2rem;
     }
     
@@ -135,6 +134,7 @@ main{
                     display: flex;
                     align-items: flex-end;
                     justify-content: center;
+                    border-bottom: 1px solid var(--title-color);
                 }
                 p{
                     color: var(--text-color);
@@ -162,9 +162,9 @@ main{
     transform: translateX(0);
   }
   25%{
-    transform: translateX(-100px) rotate(-10deg) scale(0.9); 
+    transform: translateX(-100px) rotate(-10deg) scale(1.2); 
   }
   75% {
-    transform: translateX(100px) rotate(10deg) scale(1.1); 
+    transform: translateX(100px) rotate(10deg) scale(1.3); 
   }
 }
