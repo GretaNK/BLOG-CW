@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article</title>
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/repetitif.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <a href="../index.html">
+            CB
+        </a>
+        <div class="nav-menu">
+            <a href="pages/aPropos.html">À propos</a>
+            <a href="categories.html">Articles</a>
+        </div>
+    </nav>
+
+    <div class="container-article">
+                <article class="container-gauche">
+                    <header class="hero-article">
+
+                        <h1>
+                            Les unités de mesure
+                        </h1>
+
+                        <p class="intro">
+                            Lorsque nous créons une page web, nous devons régulièrement définir la taille des éléments, les espacements, les marges ou encore la taille des textes. 
+                        </p>
+
+                        <div class="sous-titre">
+                            <div class="auteur">
+                                <span class="avatar" aria-hidden="true">L</span>
+                                <span>Écrit par <strong>Lorem Ipsum</strong></span>
+                            </div>
+
+                            <span>5 novembre 2026</span>
+                            <span>·</span>
+                            <span>6 min de lecture</span>
+                        </div>
+                    </header>
+
+                    <figure class="img-article">
+                        <img src="https://picsum.photos/seed/codebloom-css/1400/720" alt="Paysage">
+                        <figcaption>
+                            Le CSS transforme une structure HTML en une expérience visuelle.
+                        </figcaption>
+                    </figure>
+
+                    <div class="container-text">
+                        <p>
+                            Le CSS utilise différentes unités de mesure, qui permettent de contrôler les dimensions et la disposition des éléments HTML. <br>
+
+                            Il existe deux grandes catégories d'unités : les unités absolues et les unités relatives. 
+                        </p>
+
+                        <h2>Les unités absolues</h2>
+
+                        <p>
+                            Les unités absolues représentent des dimensions fixes, qui ne dépendent pas directement de la taille de l'élément parent. 
+                        </p>
+
+                        <p>
+                            Le pixel est l'une des unités les plus utilisées en CSS. Il permet de définir une dimension précise. 
+                        </p>
+
+                        <div class="conseil">
+                            <span aria-hidden="true">✦</span>
+                            <p>
+                                <strong>Conseil :</strong> la méthode la plus recommandée consiste à utiliser un fichier CSS séparé. Cette approche permet de mieux organiser son code, de séparer la structure HTML de la présentation visuelle et de faciliter la maintenance du site. 
+                            </p>
+                        </div>
+
+                        <section class="exemple-code" aria-label="Exemple de code CSS">
+                            <div class="titre-code">
+                                <div>
+                                    <p class="categorie">Exemple à retenir</p>
+                                    <h3>Connecter notre fichier CSS</h3>
+                                </div>
+                                <span class="langage-code">CSS</span>
+                            </div>
+
+                            <pre><code>&lt;head&gt; 
+&lt;link rel="stylesheet" href="style.css"&gt; 
+&lt;/head&gt;
+                            </code></pre>
+
+                            <p class="note-code">
+                                <strong>À retenir :</strong> <code>&lt;link&gt;</code> permet de lier une ressource externe à notre document HTML. 
+                            </p>
+                        </section>
+
+                        <h2>Le CSS propose également d'autres unités </h2>
+                        <p>
+                            cm : centimètres. <br>
+
+                            mm : millimètres. <br>
+
+                            in : pouces. <br>
+
+                            pt : points. <br>
+
+                            pc : picas. 
+                        </p>
+
+                        <h2>Les unités relatives</h2>
+                        <p>
+                            Contrairement aux unités absolues, les unités relatives dépendent d'une autre valeur, comme la taille de la police, les dimensions d'un élément parent ou celles de la fenêtre du navigateur. 
+
+                            Elles sont particulièrement utiles pour créer des sites responsive, capables de s'adapter aux différents formats d'écran. 
+                        </p>
+
+                        <h2>Quelle unité choisir ?</h2>
+
+                        <p>
+                            Unité et son utilisation courante ↓<br>
+
+                            px : Bordures, dimensions précises <br>
+
+                            % : Largeurs adaptatives <br>
+
+                            em : Espacements liés à la taille du texte <br>
+
+                            rem : Tailles de police et espacements cohérents <br>
+
+                            vw : Dimensions liées à la largeur de l'écran <br>
+
+                            vh : Dimensions liées à la hauteur de l'écran <br>
+
+                            dvh : Hauteur visible dynamique sur mobile 
+                        </p>
+
+                        <p>
+                            Il n'existe pas une seule unité idéale pour toutes les situations. L'objectif est de choisir celle qui correspond le mieux au comportement souhaité. 
+                        </p>
+
+                        
+                    </div>
+
+                    <footer class="partage" id="partage">
+                        <div>
+                            <p class="categorie">Tu as aimé cet article ?</p>
+                            <h2>Partage-le autour de toi.</h2>
+                        </div>
+
+                        <div class="liens-partage" aria-label="Partager cet article">
+                            <a href="#" aria-label="Partager sur LinkedIn">in</a>
+                            <a href="#" aria-label="Partager sur X">𝕏</a>
+                            <a href="#" aria-label="Partager par e-mail">
+                                ✉
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+
+                <aside>
+
+                    <div class="card-aside" id="articles" aria-label="Liste des articles">
+                        <p class="categorie">Le blog CodeBloom</p>
+                        <h2>Autres articles</h2>
+
+                        <a class="article-aside" href="introduction.html">
+                            <span>
+                                <strong>Introduction au CSS</strong>
+                                <small>Développement · 4 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="selecteurs.html">
+                            <span>
+                                <strong>Les sélécteurs CSS</strong>
+                                <small>Design · 5 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="textesetbordures.html">
+                            <span>
+                                <strong>Styles de texte et bordures</strong>
+                                <small>Développement · 7 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="boite.html">
+                            <span>
+                                <strong>Le modèle de boîte</strong>
+                                <small>Design · 5 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="unites.html">
+                            <span>
+                                <strong>Les unités de mesure</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="flexbox.html">
+                            <span>
+                                <strong>Flexbox</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="article.html">
+                            <span>
+                                <strong>Le positionnement</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="article.html">
+                            <span>
+                                <strong>CSS Grid</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="article.html">
+                            <span>
+                                <strong>Responsive design</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="article.html">
+                            <span>
+                                <strong>Les polices personalisées</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="tous-articles" href="#">Voir la liste complète <span>→</span></a
+                        >
+                    </div>
+                </aside>
+            </div>
+
+            <a href="#top" class="retour-haut">Retour en haut ↑</a>
+        </main>
+
+    <footer>
+        <img src="https://digitalcity.brussels/sites/default/files/styles/large/public/2021-07/CfiTech.jpg?itok=ONsoVdqt" alt="">
+        <p>All rights reserved Ⓒ 2026 - CodeBloom</p>
+    </footer>
+
+</body>
+</html>
