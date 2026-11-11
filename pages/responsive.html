@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article</title>
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/repetitif.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <a href="../index.html">
+            CB
+        </a>
+        <div class="nav-menu">
+            <a href="pages/aPropos.html">À propos</a>
+            <a href="categories.html">Articles</a>
+        </div>
+    </nav>
+
+    <div class="container-article">
+                <article class="container-gauche">
+                    <header class="hero-article">
+
+                        <h1>
+                            Responsive Design
+                        </h1>
+
+                        <p class="intro">
+                            Aujourd'hui, les internautes consultent les sites web depuis différents appareils : ordinateurs, tablettes et smartphones. Chaque appareil possède une taille d'écran différente, ce qui peut influencer l'affichage d'une page web. <br>
+                            C'est pourquoi il est essentiel de créer des sites capables de s'adapter automatiquement à ces différentes dimensions. <br>
+                            Cette approche est appelée Responsive Web Design, ou conception web adaptative en français. 
+                        </p>
+
+                        <div class="sous-titre">
+                            <div class="auteur">
+                                <span class="avatar" aria-hidden="true">L</span>
+                                <span>Écrit par <strong>Lorem Ipsum</strong></span>
+                            </div>
+
+                            <span>5 novembre 2026</span>
+                            <span>·</span>
+                            <span>6 min de lecture</span>
+                        </div>
+                    </header>
+
+                    <figure class="img-article">
+                        <img src="https://picsum.photos/seed/codebloom-css/1400/720" alt="Paysage">
+                        <figcaption>
+                            Le CSS transforme une structure HTML en une expérience visuelle.
+                        </figcaption>
+                    </figure>
+
+                    <div class="container-text">
+                        <p>
+                            Le Responsive Design consiste à concevoir une interface qui ajuste sa mise en page, ses images, ses textes et ses éléments de navigation en fonction de l'espace disponible. <br>
+                            L'objectif est de garantir une expérience utilisateur agréable, quel que soit l'appareil utilisé. 
+                        </p>
+
+                        <h2>Les Media Queries : adapter le CSS selon l'écran</h2>
+
+                        <p>
+                            Les Media Queries sont l'un des outils les plus importants du Responsive Design. <br>
+                            Elles permettent d'appliquer des règles CSS uniquement lorsque certaines conditions sont remplies, notamment en fonction de la largeur de la fenêtre d'affichage. <br>
+                            Pour cela, nous utilisons la règle @media. 
+                        </p>
+
+                        <div class="conseil">
+                            <span aria-hidden="true">✦</span>
+                            <p>
+                                <strong>Conseil :</strong> adoptez une approche mobile first et construisez vos mises en page en commençant par les petits écrans.
+                            </p>
+                        </div>
+
+                        <section class="exemple-code" aria-label="Exemple de code CSS">
+                            <div class="titre-code">
+                                <div>
+                                    <p class="categorie">Exemple à retenir</p>
+                                    <h3>Adapter un visuel par ecran</h3>
+                                </div>
+                                <span class="langage-code">CSS</span>
+                            </div>
+
+                            <pre><code>body { 
+    background-color: white; 
+} 
+@media (max-width: 600px) { 
+    body { 
+        background-color: lightblue; 
+} 
+} 
+                            </code></pre>
+
+                            <p class="note-code">
+                                <strong>À retenir :</strong> lorsque la largeur du viewport est supérieure à 600 pixels, l'arrière-plan reste blanc. Lorsque la largeur est inférieure ou égale à 600 pixels, l'arrière-plan devient bleu clair. <br>
+
+                                Nous pouvons donc modifier l'apparence d'une page en fonction de la largeur disponible. 
+                            </p>
+                        </section>
+                        <h2> Les unités relatives dans le Responsive Design</h2>
+
+                        <p>
+                            Pour créer des mises en page adaptatives, il est préférable de ne pas utiliser uniquement des dimensions fixes en pixels. <br>
+
+                            Les unités relatives, comme %, rem, vw et fr, permettent de créer des éléments plus flexibles. 
+                        </p>
+                        <h2>Adapter le menu de navigation</h2>
+                        <p>
+                            Sur un ordinateur, nous disposons généralement de suffisamment d'espace pour afficher les liens du menu horizontalement. 
+                        </p>
+                        <p>
+                            Sur un smartphone, cet espace est plus limité. Nous pouvons donc modifier leur disposition à l'aide d'une Media Query. 
+                        </p>
+
+                    </div>
+
+                    <footer class="partage" id="partage">
+                        <div>
+                            <p class="categorie">Tu as aimé cet article ?</p>
+                            <h2>Partage-le autour de toi.</h2>
+                        </div>
+
+                        <div class="liens-partage" aria-label="Partager cet article">
+                            <a href="#" aria-label="Partager sur LinkedIn">in</a>
+                            <a href="#" aria-label="Partager sur X">𝕏</a>
+                            <a href="#" aria-label="Partager par e-mail">
+                                ✉
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+
+                <aside>
+
+                    <div class="card-aside" id="articles" aria-label="Liste des articles">
+                        <p class="categorie">Le blog CodeBloom</p>
+                        <h2>Autres articles</h2>
+
+                        <a class="article-aside" href="introduction.html">
+                            <span>
+                                <strong>Introduction au CSS</strong>
+                                <small>Développement · 4 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="selecteurs.html">
+                            <span>
+                                <strong>Les sélécteurs CSS</strong>
+                                <small>Design · 5 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="textesetbordures.html">
+                            <span>
+                                <strong>Styles de texte et bordures</strong>
+                                <small>Développement · 7 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="boite.html">
+                            <span>
+                                <strong>Le modèle de boîte</strong>
+                                <small>Design · 5 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="unites.html">
+                            <span>
+                                <strong>Les unités de mesure</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="flexbox.html">
+                            <span>
+                                <strong>Flexbox</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="positionnement.html">
+                            <span>
+                                <strong>Le positionnement</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="grid.html">
+                            <span>
+                                <strong>CSS Grid</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="responsive.html">
+                            <span>
+                                <strong>Responsive design</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="polices.html">
+                            <span>
+                                <strong>Les polices personalisées</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="tous-articles" href="categories.html">Voir la liste complète <span>→</span></a
+                        >
+                    </div>
+                </aside>
+            </div>
+
+            <a href="#top" class="retour-haut">Retour en haut ↑</a>
+        </main>
+
+    <footer>
+        <img src="https://digitalcity.brussels/sites/default/files/styles/large/public/2021-07/CfiTech.jpg?itok=ONsoVdqt" alt="">
+        <p>All rights reserved Ⓒ 2026 - CodeBloom</p>
+    </footer>
+
+</body>
+</html>

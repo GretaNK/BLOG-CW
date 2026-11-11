@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article</title>
+    <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/repetitif.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <a href="../index.html">
+            CB
+        </a>
+        <div class="nav-menu">
+            <a href="pages/aPropos.html">À propos</a>
+            <a href="categories.html">Articles</a>
+        </div>
+    </nav>
+
+    <div class="container-article">
+                <article class="container-gauche">
+                    <header class="hero-article">
+
+                        <h1>
+                            CSS Grid
+                        </h1>
+
+                        <p class="intro">
+                            Lorsqu'on développe un site web, il est essentiel de pouvoir organiser les différents éléments de manière claire et harmonieuse. <br>
+
+                            Après avoir découvert Flexbox, qui permet principalement de disposer des éléments sur un seul axe, nous allons maintenant découvrir CSS Grid. 
+                        </p>
+
+                        <div class="sous-titre">
+                            <div class="auteur">
+                                <span class="avatar" aria-hidden="true">L</span>
+                                <span>Écrit par <strong>Lorem Ipsum</strong></span>
+                            </div>
+
+                            <span>5 novembre 2026</span>
+                            <span>·</span>
+                            <span>6 min de lecture</span>
+                        </div>
+                    </header>
+
+                    <figure class="img-article">
+                        <img src="https://picsum.photos/seed/codebloom-css/1400/720" alt="Paysage">
+                        <figcaption>
+                            Le CSS transforme une structure HTML en une expérience visuelle.
+                        </figcaption>
+                    </figure>
+
+                    <div class="container-text">
+                        <p>
+                            CSS Grid est un système de mise en page qui permet de créer des structures composées de lignes et de colonnes. Il est particulièrement utile pour organiser les différentes sections d'un site, créer des galeries d'images ou afficher des articles de blog sous forme de grille.
+                        </p>
+
+                        <p>
+                            Contrairement à Flexbox, CSS Grid permet de contrôler simultanément la disposition horizontale et verticale des éléments. 
+                        </p>
+
+                        <h2>Comment fonctionne CSS Grid ?/h2>
+
+                        <p>
+                            Pour utiliser CSS Grid, nous devons commencer par définir un conteneur en grille. <br>
+
+                            Il suffit d'appliquer la propriété display: grid; à un élément parent. 
+                        </p>
+
+                        <p>
+                            Les éléments enfants directs deviennent alors des éléments de la grille. <br>
+
+                            Cependant, pour organiser leur disposition, nous devons définir le nombre et la taille des colonnes ou des lignes. 
+                        </p>
+
+                        <div class="conseil">
+                            <span aria-hidden="true">✦</span>
+                            <p>
+                                <strong>Conseil :</strong> utilisez grid-template-columns: repeat() pour créer facilement des colonnes régulières et gagner du temps dans vos mises en page.
+                            </p>
+                        </div>
+
+                        <section class="exemple-code" aria-label="Exemple de code CSS">
+                            <div class="titre-code">
+                                <div>
+                                    <p class="categorie">Exemple à retenir</p>
+                                    <h3>Connecter notre fichier CSS</h3>
+                                </div>
+                                <span class="langage-code">CSS</span>
+                            </div>
+
+                            <pre><code>.articles { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+} 
+.article { 
+    padding: 20px; 
+    background-color: #f5f5f5; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    text-align: center; 
+} 
+                            </code></pre>
+
+                            <p class="note-code">
+                                <strong>À retenir :</strong> dans cet exemple, les articles sont automatiquement organisés en colonnes en fonction de l'espace disponible. 
+                            </p>
+                        </section>
+
+                        <h2>Quelle est la différence entre Flexbox et Grid ?</h2>
+                        <p>
+                            Même si Flexbox et Grid permettent tous les deux d'organiser les éléments d'une page web, ils répondent à des besoins différents.  
+                        </p>
+
+                        <p>
+                            Flexbox : Fonctionne principalement sur un axe , Idéal pour aligner des éléments, Pratique pour les menus et les boutons, Organisation flexible selon le contenu
+                        </p>
+
+                        <p>
+                            Grid : Fonctionne sur deux axes, Idéal pour créer des mises en page structurées, Pratique pour les galeries et les articles, Organisation en lignes et colonnes 
+                        </p>
+
+                        <p>
+                            Ces deux systèmes sont complémentaires et peuvent être utilisés ensemble dans un même site. 
+                        </p>
+
+                        
+                    </div>
+
+                    <footer class="partage" id="partage">
+                        <div>
+                            <p class="categorie">Tu as aimé cet article ?</p>
+                            <h2>Partage-le autour de toi.</h2>
+                        </div>
+
+                        <div class="liens-partage" aria-label="Partager cet article">
+                            <a href="#" aria-label="Partager sur LinkedIn">in</a>
+                            <a href="#" aria-label="Partager sur X">𝕏</a>
+                            <a href="#" aria-label="Partager par e-mail">
+                                ✉
+                            </a>
+                        </div>
+                    </footer>
+                </article>
+
+                <aside>
+
+                    <div class="card-aside" id="articles" aria-label="Liste des articles">
+                        <p class="categorie">Le blog CodeBloom</p>
+                        <h2>Autres articles</h2>
+
+                        <a class="article-aside" href="introduction.html">
+                            <span>
+                                <strong>Introduction au CSS</strong>
+                                <small>Développement · 4 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="selecteurs.html">
+                            <span>
+                                <strong>Les sélécteurs CSS</strong>
+                                <small>Design · 5 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="textesetbordures.html">
+                            <span>
+                                <strong>Styles de texte et bordures</strong>
+                                <small>Développement · 7 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="boite.html">
+                            <span>
+                                <strong>Le modèle de boîte</strong>
+                                <small>Design · 5 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="unites.html">
+                            <span>
+                                <strong>Les unités de mesure</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="flexbox.html">
+                            <span>
+                                <strong>Flexbox</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="positionnement.html">
+                            <span>
+                                <strong>Le positionnement</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="grid.html">
+                            <span>
+                                <strong>CSS Grid</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="responsive.html">
+                            <span>
+                                <strong>Responsive design</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="article-aside" href="polices.html">
+                            <span>
+                                <strong>Les polices personalisées</strong>
+                                <small>Boîte à outils · 8 min</small>
+                            </span>
+                        </a>
+
+                        <a class="tous-articles" href="categories.html">Voir la liste complète <span>→</span></a
+                        >
+                    </div>
+                </aside>
+            </div>
+
+            <a href="#top" class="retour-haut">Retour en haut ↑</a>
+        </main>
+
+    <footer>
+        <img src="https://digitalcity.brussels/sites/default/files/styles/large/public/2021-07/CfiTech.jpg?itok=ONsoVdqt" alt="">
+        <p>All rights reserved Ⓒ 2026 - CodeBloom</p>
+    </footer>
+
+</body>
+</html>
